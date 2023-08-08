@@ -15,9 +15,8 @@ export default class GnomeTerminal extends Plugin {
 						console.log(err);
 					});
 				});
-			loadGnomeTerminal.addClass('gnome-terminal-class');
 
-			const gitPushGnomeTerminal = this.addRibbonIcon(
+			const pythonGnomeTerminal = this.addRibbonIcon(
 				'file-terminal', 'main.py (Gnome Terminal)', (evt: MouseEvent) => {
 					const {spawn} = require('child_process');
 
@@ -34,7 +33,6 @@ export default class GnomeTerminal extends Plugin {
 						console.log(err);
 					});
 				});
-			gitPushGnomeTerminal.addClass('git-push-gnome-terminal');
 		}
 
 	}
