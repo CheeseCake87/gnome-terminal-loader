@@ -1,0 +1,24 @@
+{
+	"name": "gnome-terminal-loader",
+	"version": "0.0.1",
+	"description": "An Obsidian plugin that loads Gnome Terminal. It also has a Python script entry point loader, by placing a file called main.py in the root of the vault. (Only compatible with Linux, with gnome-terminal and python3 installed)",
+	"main": "main.js",
+	"scripts": {
+		"dev": "node esbuild.config.mjs",
+		"build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
+		"version": "node version-bump.mjs && git add manifest.json versions.json"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/node": "^16.11.6",
+		"@typescript-eslint/eslint-plugin": "5.29.0",
+		"@typescript-eslint/parser": "5.29.0",
+		"builtin-modules": "3.3.0",
+		"esbuild": "0.17.3",
+		"obsidian": "latest",
+		"tslib": "2.4.0",
+		"typescript": "4.7.4"
+	}
+}
