@@ -3,7 +3,7 @@
 	"name": "Gnome Terminal Loader",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
-	"description": "Adds sidebar action icons to quickly open the Gnome Terminal or to have the Gnome Terminal run a Python module (Will look for main.py in the root of the current vault)",
+	"description": "Adds sidebar action icons to quickly open the Gnome Terminal or to have the Gnome Terminal run a Python module",
 	"author": "David Carmichael",
 	"authorUrl": "https://github.com/CheeseCake87",
 	"isDesktopOnly": true
