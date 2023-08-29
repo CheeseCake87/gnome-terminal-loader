@@ -5,7 +5,7 @@ export default class GnomeTerminal extends Plugin {
 
 	async onload() {
 
-		if (Platform.isDesktopApp) {
+		if (Platform.isLinux) {
 			const loadGnomeTerminal = this.addRibbonIcon(
 				'terminal-square', 'Gnome Terminal', (evt: MouseEvent) => {
 					const {spawn} = require('child_process');
@@ -22,8 +22,6 @@ export default class GnomeTerminal extends Plugin {
 
 					const command = 'gnome-terminal'
 					const cmd_args = ["--", "python3", "main.py"]
-
-					console.log(command)
 
 					let openTerminalAtPath = spawn(command, cmd_args, {
 						shell: true, //@ts-ignore
